@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zadaci</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/zadaci.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <img id="logo" src="/static/logo.png" alt="nema"/>
+            <h1>Odabir vježbe</h1>
+            <ul id="meni">
+                <li id="trenutni"><a href="#">Pregled godina</a></li>
+                <li class="ostali"><a href="addGodina.html">Dodavanje godine</a></li>
+                <li class="ostali"><a href="studenti.html">Pregled studenata</a></li>
+                <li class="ostali"><a href="commiti.html">Pregled commita</a></li>
+                <li class="ostali"><a href="addVjezba.html">Dodavanje vježbe</a></li>
+                <li class="ostali"><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li class="ostali"><a href="addStudent.html">Dodavanje studenta</a></li>
+            </ul>
+        </div>
+        <div class="cetvrtina" id="godinaDiv">
+            <p>Godina<p>
+            <ul id="godina">
+                <li>Godina 2014/15</li>
+                <li>Godina 2015/16</li>
+                <li>Godina 2016/17</li>
+                <li>Godina 2017/18</li>
+                <li>Godina 2018/19</li>
+            </ul>
+        </div>
+
+        <div class="cetvrtina" id="student">
+            <p>Student</p>
+            <form action="#">
+                <input type="text" name="query" placeholder="Unesite studenta.."><br>
+                <button type="submit" id="submitButton" onclick="validate(); return false;">Search</button>
+            </form>
+            <ul id="imena">
+                <li>Ime i prezime | index</li>
+                <li>Neko Nekić | 12345</li>
+                <li>Neko Nekić | 12345</li>
+                <li>Neko Nekić | 12345</li>
+                <li>Neko Nekić | 12345</li>
+            </ul>
+        </div>
+
+        <div class="polovina">
+            <div id="vjezbe" class="folder">
+                <p>Vježbe</p>
+                <ul>
+                    <li><button class="item">Vježba 1</button></li>
+                    <li><button class="item">Vježba 2</button></li>
+                    <li><button class="item">Vježba 3</button></li>
+                    <li><button class="item">Vježba 4</button></li>
+                    <li><button class="item">Vježba 5</button></li>
+                    <li><button class="item">Vježba 6</button></li>
+                </ul>
+            </div>
+            <div id="spirale" class="folder">
+                <p>Spirale</p>
+                <ul>
+                    <li><button class="item">Spirala 1</button></li>
+                    <li><button class="item">Spirala 2</button></li>
+                    <li><button class="item">Spirala 3</button></li>
+                    <li><button class="item">Spirala 4</button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+
+        <script src="/static/validacija.js"></script>
+        <script src="/static/zadaci.js"></script>
+    </body>
+</html>

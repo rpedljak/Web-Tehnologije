@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dodaj vjezbu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/addVjezba.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <img id="logo" src="/static/logo.png" alt="nema"/>
+            <h1>Dodavanje vježbe/spirale</h1>
+            <ul id="meni">
+                <li class="ostali"><a href="zadaci.html">Pregled godina</a></li>
+                <li class="ostali"><a href="addGodina.html">Dodavanje godine</a></li>
+                <li class="ostali"><a href="studenti.html">Pregled studenata</a></li>
+                <li class="ostali"><a href="commiti.html">Pregled commita</a></li>
+                <li id="trenutni"><a href="#">Dodavanje vježbe</a></li>
+                <li class="ostali"><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li class="ostali"><a href="addStudent.html">Dodavanje studenta</a></li>
+            </ul>
+        </div>
+        <div id="glavniSadrzaj">
+            <form id="dodavanje" name="fPostojeca">
+                <p>Dodavanje postojeće vježbe/spirale</p>
+                <label>Godina</label><br>
+                <select name="sGodine">
+                    <option>2018/19</option>
+                    <option>2017/18</option>
+                    <option>2016/17</option>
+                    <option>2015/16</option>
+                </select><br>
+                <label>Vježbe/spirale</label><br>
+                <select name="sVjezbe">
+                    <option value="x">Vjezba X</option>
+                </select><br>
+                <button type="submit" name="submit" id="dodajButton">Dodaj</button>
+            </form>
+
+            <form id="dodavanje2" name="fNova" action="#">
+                    <p>Nova vježba/spirala</p>
+                    <label>Naziv vježbe</label><br>
+                    <input name="naziv" type="text" placeholder="Naziv.."><br>
+                    <label>Godina</label><br>
+                    <select name="sGodine">
+                        <option>2018/19</option>
+                        <option>2017/18</option>
+                        <option>2016/17</option>
+                        <option>2015/16</option>
+                    </select><br>
+                    <textarea rows="7">
+                        Zadatak 1 
+                        Zadatak 2 
+                        Zadatak 3
+                    </textarea><br>
+                    <select name="sZadatak">
+                        <option>Zadatak X</option>
+                    </select><br>
+                    <button type="button" name="dZadatak" id="dodajZadatak">Dodaj zadatak</button><br>
+                    <input type="checkbox" name="spirala"><label>Spirala</label><br>
+                    <button type="submit" name="submit" id="dodajButton2" onclick="validate(); return false;">Dodaj</button>
+                </form>
+        </div>
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+
+        <script src="/static/validacija.js"></script>
+        <script src="/static/addVjezba.js"></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700,800&subset=latin-ext');
+
+body {
+    background: url("fog.png");
+}
+
+#login {
+    display: grid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 400px;
+    max-width: 700px;
+}
+
+form {
+    display: grid;
+    margin: 20px;
+    grid-gap: 20px;
+    border: 3px #122b3980 solid;
+    border-radius: 10px;
+    background: #4fa3c12f;
+}
+
+#user {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    grid-column: 1/3;
+    width: 80%;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+#user label {
+    color: #122b39b0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 100px;
+}
+
+#user input[type="text"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left:10px;
+}
+
+#pass input[type="password"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#pass {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+    grid-column: 1/3;
+    width: 80%;
+    height: 20px;
+    margin: auto;
+    border-radius: 8%;
+}
+
+#pass label {
+    color: #122b39b0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 100px;
+}
+
+#loginButton {
+    grid-column: 2/3;
+    width: 150px;
+    height: 50px;
+    color: #122b39b0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 60px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(249, 249, 249, 0.329)
+}
+
+#loginButton:hover {
+    background-color: #4fa3c13a;
+    border-style: inset;
+}

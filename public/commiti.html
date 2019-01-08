@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Commiti</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/commiti.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <img id="logo" src="/static/logo.png" alt="nema"/>
+            <h1>Pregled commita</h1>
+            <ul id="meni">
+                <li class="ostali"><a href="zadaci.html">Pregled godina</a></li>
+                <li class="ostali"><a href="addGodina.html">Dodavanje godine</a></li>
+                <li class="ostali"><a href="studenti.html">Pregled studenata</a></li>
+                <li id="trenutni"><a href="#">Pregled commita</a></li>
+                <li class="ostali"><a href="addVjezba.html">Dodavanje vježbe</a></li>
+                <li class="ostali"><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li class="ostali"><a href="addStudent.html">Dodavanje studenta</a></li>
+            </ul>
+        </div>
+        <div id="glavni">
+            <p>Student: Neko Nekić, 12345</p>
+            <p>Naziv vježbe/spirale: Vježba 1</p>
+            <p>Repozitorij: <a href="#">Hyperlink</a></p><br><br>
+            <form id="create" action="#">
+                <fieldset>
+                    <legend>Kreiraj tabelu</legend>
+                    <input class="unos" type="number" placeholder="Broj zadataka" id="velicinaTabele">
+                    <button type="button" id="kreiraj" onclick="kreirajTabelu(); return false;">Kreiraj</button>
+                    <button type="button" id="obrisi" onclick="obrisiTabelu(); return false;" disabled=true>Obriši</button>
+                </fieldset>
+            </form>
+            <form id="addCommit" action="#">
+                <fieldset>
+                    <legend>Dodaj commit</legend>
+                    <input type="number" id="rbZadatkaDodaj" placeholder="Broj zadatka">
+                    <input type="text" id="linkDodaj" placeholder="Link">
+                    <button id="dodajCommitButton" onclick="dodajCommit(); return false;">Dodaj commit</button>
+                </fieldset>
+            </form>
+            <form id="edit" action="#">
+                <fieldset>
+                    <legend>Edituj commit</legend>
+                    <input type="number" id="rbZadatkaEdituj" placeholder="Broj zadatka">
+                    <input type="number" id="rbCommitaEdituj" placeholder="Broj commita">
+                    <input type="text" id="linkEdituj" placeholder="Link">
+                    <button id="editujCommitButton" onclick="editujCommit(); return false;">Edituj commit</button>
+                </fieldset>
+            </form>
+            <form id="delete" action="#">
+                <fieldset>
+                    <legend>Obriši commit</legend>
+                    <input type="number" id="rbZadatkaObrisi" placeholder="Broj zadatka">
+                    <input type="number" id="rbCommitaObrisi" placeholder="Broj commita">
+                    <button id="obrisiCommitButton" onclick="obrisiCommit(); return false;">Obriši commit</button>
+                </fieldset>
+                
+            </form>
+        </div>
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+
+        <script src="/static/commiti.js"></script>
+        <script src="/static/committabela.js"></script>
+        <script src="/static/validacija.js"></script>
+    </body>
+</html>

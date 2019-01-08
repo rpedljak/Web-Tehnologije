@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dodaj studenta</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/addStudent.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <img id="logo" src="/static/logo.png" alt="nema"/>
+            <h1>Dodavanje studenata</h1>
+            <ul id="meni">
+                <li class="ostali"><a href="zadaci.html">Pregled godina</a></li>
+                <li class="ostali"><a href="addGodina.html">Dodavanje godine</a></li>
+                <li class="ostali"><a href="studenti.html">Pregled studenata</a></li>
+                <li class="ostali"><a href="commiti.html">Pregled commita</a></li>
+                <li class="ostali"><a href="addVjezba.html">Dodavanje vježbe</a></li>
+                <li class="ostali"><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li id="trenutni"><a href="#">Dodavanje studenta</a></li>
+            </ul>
+        </div>
+        <div id="glavniSadrzaj">
+            <form id="dodavanje" name="fPojedinacni" action="#">
+                <p>Pojedinačni unos</p>
+                <label>Godina</label><br>
+                <select name="godina">
+                    <option>2018/19</option>
+                    <option>2017/18</option>
+                    <option>2016/17</option>
+                    <option>2015/16</option>
+                </select><br>
+                <label>Ime i prezime</label><br>
+                <input type="text" name="ime" placeholder="Ime i prezime.." required><br>
+                <label>Index</label><br>
+                <input type="number" name="index" placeholder="Index.." required><br>
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="Email.." required><br>
+                <button type="submit" name="submit" id="dodajButton" onclick="validate(); return false;">Unesi</button>
+            </form>
+
+            <form id="dodavanje2" name="fMasovni">
+                    <p>Masovni unos</p>
+                    <label>Godina</label><br>
+                    <select name="godina">
+                        <option>2018/19</option>
+                        <option>2017/18</option>
+                        <option>2016/17</option>
+                        <option>2015/16</option>
+                    </select><br>
+                    <input type="file" name="postavka" id="postavkaZadatka"><label for="postavkaZadatka">Browse...</label><br>
+                    <button type="submit" name="submit" id="dodajButton2">Unesi</button>
+                </form>
+        </div>
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+
+        <script src="/static/validacija.js"></script>
+        <script src="/static/addStudent.js"></script>
+    </body>
+</html>

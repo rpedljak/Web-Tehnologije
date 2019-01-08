@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@media (min-width: 600px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-gap: 0;
+        background: url('fog.png');
+    }
+    
+    #logo {
+        padding: 0;
+        margin: 10px;
+        max-height: 50px;
+        max-width: 50px;
+    }
+    
+    #slika:hover {
+        content: url("logohover.png");
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+    
+    #header {
+        grid-column: 1/3;
+        overflow: hidden;
+    }
+    
+    #header h1 {
+        float: right;
+        color: #122b39;
+        font-family: 'Poppins';
+        margin-right: 10px;
+    }
+    
+    #header ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    #header li {
+        box-sizing: border-box;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .ostali {
+        background-color: rgba(249, 249, 249, 0.329);
+    }
+
+    #trenutni {
+        background-color: #aaaaaa;
+    }
+    
+    .ostali:hover {
+        background-color: #aaaaaa;
+    }
+    
+    #header a {
+        color: #122b39b0;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none; 
+        font-weight: 800;
+        cursor: pointer;
+    }
+    
+    #side {
+        border: 3px #122b3980 solid;
+        border-radius: 10px;
+        background-color: #4fa3c12f;
+    }
+    
+    #side form {
+        margin: 10px;
+        padding: 10px;
+        background-color: #122b3965;
+        border: 3px solid #122b3980;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    label {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    #side p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Poppins';
+        color: #1a1a1a;
+    }
+    
+    .dugme {
+        margin-top: 10px;
+        width: 130px;
+        height: 40px;
+        font-family: 'Poppins';
+        font-weight: 800;
+        font-size: 15px;
+        box-sizing: border-box;
+        border: none;
+        display: inline-block;
+        border-radius: 15px;
+        background-color: #aaaaaa66;
+        margin-bottom: 30px;
+    }
+    
+    .dugme:hover {
+        border: 1px inset;
+        background-color: #66666644;
+    }
+    
+    input[type="text"] {
+        width: 60%;
+        font-family: 'Poppins';
+        font-size: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    #glavniSadrzaj {
+        display: grid;
+        grid-template-columns: auto auto;
+        border: 3px #122b3980 solid;
+        border-radius: 10px;
+        background-color: #4fa3c12f;
+    }
+    
+    .godina {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        background-color: #122b3965;
+        border: 3px solid #122b3980;
+        border-radius: 10px;
+        overflow-y: scroll;
+    }
+    
+    .godina p {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    #footer {
+        grid-column: 1/3; 
+        text-align: center;
+    }    
+    
+    #footer p {
+        font-family: 'Poppins';
+        font-size: 25px;
+        font-weight: 800;
+        color: #122b39;
+    } 
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-gap: 0;
+        background: url('fog.png');
+        background-size: cover;
+        
+    }
+    
+    #logo {
+        padding: 0;
+        margin: 10px;
+        max-height: 50px;
+        max-width: 50px;
+    }
+    
+    #slika:hover {
+        content: url("logohover.png");
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+    
+    #header {
+        overflow: hidden;
+    }
+    
+    #header h1 {
+        float: right;
+        color: #122b39;
+        font-family: 'Poppins';
+        margin-right: 10px;
+    }
+    
+    #header ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    #header li {
+        box-sizing: border-box;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .ostali {
+        background-color: rgba(249, 249, 249, 0.329);
+    }
+
+    #trenutni {
+        background-color: #aaaaaa;
+    }
+    
+    .ostali:hover {
+        background-color: #aaaaaa;
+    }
+    
+    #header a {
+        color: #122b39b0;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none; 
+        font-weight: 800;
+        cursor: pointer;
+    }
+    
+    #side {
+        border: 3px #122b3980 solid;
+        border-radius: 10px;
+        background-color: #4fa3c12f;
+    }
+    
+    #side form {
+        margin: 10px;
+        padding: 10px;
+        background-color: #122b3965;
+        border: 3px solid #122b3980;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    label {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    #side p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Poppins';
+        color: #1a1a1a;
+    }
+    
+    .dugme {
+        margin-top: 10px;
+        width: 130px;
+        height: 40px;
+        font-family: 'Poppins';
+        font-weight: 800;
+        font-size: 15px;
+        box-sizing: border-box;
+        border: none;
+        display: inline-block;
+        border-radius: 15px;
+        background-color: #aaaaaa66;
+        margin-bottom: 30px;
+    }
+    
+    .dugme:hover {
+        border: 1px inset;
+        background-color: #66666644;
+    }
+    
+    input[type="text"] {
+        width: 60%;
+        font-family: 'Poppins';
+        font-size: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    #glavniSadrzaj {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 50% auto;
+        border: 3px #122b3980 solid;
+        border-radius: 10px;
+        background-color: #4fa3c12f;
+    }
+    
+    .godina {
+        height: 70%;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        background-color: #122b3965;
+        border: 3px solid #122b3980;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+    
+    .godina p {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    #footer {
+        text-align: center;
+    }    
+    
+    #footer p {
+        font-family: 'Poppins';
+        font-size: 25px;
+        font-weight: 800;
+        color: #122b39;
+    } 
+}
