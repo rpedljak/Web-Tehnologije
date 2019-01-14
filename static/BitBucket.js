@@ -50,14 +50,20 @@ var BitBucket = (function() {
                             //proslijeđivanje studenata
                             callback(null,studenti);
                         }
+
+                        if(ajax.readyState==4 && ajax.status!=200) {
+                            callback(JSON.parse(ajax.responseText).error_description,null);
+                        }
                     }
 
                     //query ovako zbog preglednosti
                     var query="q=name+%7E+%22"+nazivRepSpi+"%22+OR+name+%7E+%22"+nazivRepVje+"%22";
 
-                    ajax.open("GET", "https://api.bitbucket.org/2.0/repositories/?role=member&"+query,true);
+                    ajax.open("GET", "https://api.bitbucket.org/2.0/repositories/?role=member&"+query,false);
                     ajax.setRequestHeader("Authorization", 'Bearer '+JSON.parse(rezultat).access_token);
                     ajax.send();
+                }).catch((err) => {
+                    callback(JSON.parse(err).error_description,null);
                 }); 
             }
         };

@@ -30,6 +30,11 @@ function ispisi(greska,x){
     if(greska==null) {
         studenti=x;
     }
+    else {
+        alert(greska);
+        bbucket=null;
+        dodaj.disabled=true;
+    }
 }
 
 function dajPodatkeOGodini() {
