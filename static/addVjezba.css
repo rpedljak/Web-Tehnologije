@@ -79,15 +79,7 @@
         background-color: #4fa3c12f
     }
 
-    #dodavanje {
-        margin: 10px;
-        background-color: #122b3965;
-        border: 3px solid #122b3980;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    #dodavanje2 {
+    form {
         margin: 10px;
         background-color: #122b3965;
         border: 3px solid #122b3980;
@@ -112,15 +104,7 @@
         font-size: 20px;
     }
 
-    #dodavanje p {
-        text-align: center;
-        font-size: 40px;
-        font-weight: 800;
-        font-family: 'Poppins';
-        color: #1a1a1a;
-    }
-
-    #dodavanje2 p {
+    form p {
         text-align: center;
         font-size: 40px;
         font-weight: 800;

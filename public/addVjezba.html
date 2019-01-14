@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/static/addVjezba.css"/>
     </head>
-    <body>
+    <body onload="popuniSelecte();">
         <div id="header">
             <img id="logo" src="/static/logo.png" alt="nema"/>
             <h1>Dodavanje vježbe/spirale</h1>
@@ -20,45 +20,38 @@
             </ul>
         </div>
         <div id="glavniSadrzaj">
-            <form id="dodavanje" name="fPostojeca">
+            <form id="dodavanje" name="fPostojeca" action="http://localhost:8080/addVjezba" method="POST">
                 <p>Dodavanje postojeće vježbe/spirale</p>
                 <label>Godina</label><br>
-                <select name="sGodine">
-                    <option>2018/19</option>
-                    <option>2017/18</option>
-                    <option>2016/17</option>
-                    <option>2015/16</option>
+                <select name="sGodine" id="s1">
                 </select><br>
                 <label>Vježbe/spirale</label><br>
-                <select name="sVjezbe">
-                    <option value="x">Vjezba X</option>
+                <select name="sVjezbe" id="s3">
                 </select><br>
                 <button type="submit" name="submit" id="dodajButton">Dodaj</button>
             </form>
 
-            <form id="dodavanje2" name="fNova" action="#">
-                    <p>Nova vježba/spirala</p>
-                    <label>Naziv vježbe</label><br>
-                    <input name="naziv" type="text" placeholder="Naziv.."><br>
-                    <label>Godina</label><br>
-                    <select name="sGodine">
-                        <option>2018/19</option>
-                        <option>2017/18</option>
-                        <option>2016/17</option>
-                        <option>2015/16</option>
-                    </select><br>
-                    <textarea rows="7">
-                        Zadatak 1 
-                        Zadatak 2 
-                        Zadatak 3
-                    </textarea><br>
-                    <select name="sZadatak">
-                        <option>Zadatak X</option>
-                    </select><br>
-                    <button type="button" name="dZadatak" id="dodajZadatak">Dodaj zadatak</button><br>
-                    <input type="checkbox" name="spirala"><label>Spirala</label><br>
-                    <button type="submit" name="submit" id="dodajButton2" onclick="validate(); return false;">Dodaj</button>
-                </form>
+            <form id="dodavanje2" name="fNova" action="http://localhost:8080/addVjezba" method="POST">
+                <p>Nova vježba/spirala</p>
+                <label>Naziv vježbe</label><br>
+                <input name="naziv" type="text" placeholder="Naziv.."><br>
+                <label>Godina</label><br>
+                <select name="sGodine" id="s2">
+                </select><br>
+                <input type="checkbox" name="spirala"><label>Spirala</label><br>
+                <button type="submit" name="submit" id="dodajButton2" onclick="validate();">Dodaj</button>
+            </form>
+
+            <form id="dodavanje3" name="fPoveziZadatak" method="POST" onsubmit="posaljiZahtjev();">
+                <p>Dodavanje zadatka na vježbu</p>
+                <label>Vježba</label><br>
+                <select name="sVjezbe" id="s4" onchange="loadZadaci();">
+                </select><br>
+                <label>Zadatak</label><br>
+                <select name="sZadatak" id="s5">
+                </select><br>
+                <button type="submit" name="dZadatak" id="dodajZadatak">Dodaj zadatak</button><br>
+            </form>
         </div>
         <div id="footer">
             <p>Web tehnologije 2018/19</p>
@@ -66,5 +59,6 @@
 
         <script src="/static/validacija.js"></script>
         <script src="/static/addVjezba.js"></script>
+        <script src="/static/UcitajSelect.js"></script>
     </body>
 </html>

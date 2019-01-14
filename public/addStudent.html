@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/static/addStudent.css"/>
     </head>
-    <body>
+    <body onload="popuniSelecte();">
         <div id="header">
             <img id="logo" src="/static/logo.png" alt="nema"/>
             <h1>Dodavanje studenata</h1>
@@ -20,36 +20,18 @@
             </ul>
         </div>
         <div id="glavniSadrzaj">
-            <form id="dodavanje" name="fPojedinacni" action="#">
+            <form id="dodavanje" enctype="application/json" action="#" name="fPojedinacni" onsubmit="posaljiZahtjev(); return false;">
                 <p>Pojedinačni unos</p>
                 <label>Godina</label><br>
-                <select name="godina">
-                    <option>2018/19</option>
-                    <option>2017/18</option>
-                    <option>2016/17</option>
-                    <option>2015/16</option>
+                <select name="godina" id="s1">
                 </select><br>
-                <label>Ime i prezime</label><br>
-                <input type="text" name="ime" placeholder="Ime i prezime.." required><br>
-                <label>Index</label><br>
-                <input type="number" name="index" placeholder="Index.." required><br>
-                <label>Email</label><br>
-                <input type="email" name="email" placeholder="Email.." required><br>
-                <button type="submit" name="submit" id="dodajButton" onclick="validate(); return false;">Unesi</button>
+                <label>Key</label><br>
+                <input type="text" name="key" id="keyId" placeholder="Key..." required><br>
+                <label>Secret</label><br>
+                <input type="text" name="secret" id="secretId" placeholder="Secret..." required><br>
+                <button type="button" onclick="ucitajModul();">Učitaj</button><br>
+                <button type="submit" id="dodajButton" disabled>Dodaj</button>
             </form>
-
-            <form id="dodavanje2" name="fMasovni">
-                    <p>Masovni unos</p>
-                    <label>Godina</label><br>
-                    <select name="godina">
-                        <option>2018/19</option>
-                        <option>2017/18</option>
-                        <option>2016/17</option>
-                        <option>2015/16</option>
-                    </select><br>
-                    <input type="file" name="postavka" id="postavkaZadatka"><label for="postavkaZadatka">Browse...</label><br>
-                    <button type="submit" name="submit" id="dodajButton2">Unesi</button>
-                </form>
         </div>
         <div id="footer">
             <p>Web tehnologije 2018/19</p>
@@ -57,5 +39,7 @@
 
         <script src="/static/validacija.js"></script>
         <script src="/static/addStudent.js"></script>
+        <script src="/static/UcitajSelect.js"></script>
+        <script src="/static/BitBucket.js"></script>
     </body>
 </html>
