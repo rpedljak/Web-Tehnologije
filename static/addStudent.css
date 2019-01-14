@@ -1,321 +1,175 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+body {
+    margin: 0;
+    display: grid;
+    grid-gap: 0;
+    background: url('fog.png');
+    background-size: cover;
+    
+}
+
+#logo {
+    padding: 0;
+    margin: 10px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+#header {
+    overflow: hidden;
+}
+
+#header h1 {
+    float: right;
+    color: #122b39;
+    font-family: 'Poppins';
+    margin-right: 10px;
+}
+
+#header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#header li {
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ostali {
+    background-color: rgba(249, 249, 249, 0.329);
+}
+
+#trenutni {
+    background-color: #aaaaaa;
+}
+
+.ostali:hover {
+    background-color: #aaaaaa;
+}
+
+#header a {
+    color: #122b39b0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; 
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#glavniSadrzaj {
+    width: 85%;
+    border: 3px #122b3980 solid;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #4fa3c12f
+}
+
+#dodavanje {
+    margin: 10px;
+    background-color: #122b3965;
+    border: 3px solid #122b3980;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 40%;
+    font-family: 'Poppins';
+    font-size: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#dodavanje p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    color: #1a1a1a;
+}
+
+select {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: none;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #aaaaaa66;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: none;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #aaaaaa66;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    border: 1px inset;
+    background-color: #66666644;
+}
+
+#footer {
+    text-align: center;
+}    
+
+#footer p {
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 800;
+    color: #122b39;
+} 
+
 @media (max-width: 600px) {
     body {
         margin: 0;
         display: grid;
+        grid-template-columns: 100%;
         grid-gap: 0;
         background: url('fog.png');
-        background-size: cover;   
-    }
-    
-    #logo {
-        padding: 0;
-        margin: 10px;
-        max-height: 50px;
-        max-width: 50px;
-    }
-    
-    #slika:hover {
-        content: url("logohover.png");
-        height: 50px;
-        width: 50px;
-        margin: 10px;
+        background-size: cover;
     }
     
     #header {
         display: grid;
         grid-template-rows: auto auto auto;
-        overflow: hidden;
     }
-    
+
     #header h1 {
         grid-row: 3/4;
-        float: right;
-        color: #122b39;
-        font-family: 'Poppins';
-        margin-right: 10px;
-    }
-    
-    #header ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    #header li {
-        box-sizing: border-box;
-        float: left;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding: 5px;
-        border-radius: 10px;
     }
 
-    .ostali {
-        background-color: rgba(249, 249, 249, 0.329);
-    }
-
-    #trenutni {
-        background-color: #aaaaaa;
-    }
-    
-    .ostali:hover {
-        background-color: #aaaaaa;
-    }
-    
-    #header a {
-        color: #122b39b0;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none; 
-        font-weight: 800;
-        cursor: pointer;
-    }
-    
     #glavniSadrzaj {
         width: 100%;
-        border: 3px #122b3980 solid;
-        border-radius: 10px;
-        margin: auto;
-        background-color: #4fa3c12f
     }
-
-    #dodavanje {
-        margin: 10px;
-        background-color: #122b3965;
-        border: 3px solid #122b3980;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    input[type="text"] {
-        width: 40%;
-        font-family: 'Poppins';
-        font-size: 20px;
-        box-sizing: border-box;
-        display: inline-block;  
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
-
-    label {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    #dodavanje p {
-        text-align: center;
-        font-size: 40px;
-        font-weight: 800;
-        font-family: 'Poppins';
-        color: #1a1a1a;
-    }
-
-    select {
-        margin-top: 10px;
-        width: 100px;
-        height: 40px;
-        font-family: 'Poppins';
-        font-weight: 800;
-        font-size: 15px;
-        box-sizing: border-box;
-        border: none;
-        display: inline-block;
-        border-radius: 15px;
-        background-color: #aaaaaa66;
-        margin-bottom: 30px;
-    }
-
-    button {
-        margin-top: 10px;
-        width: 130px;
-        height: 40px;
-        font-family: 'Poppins';
-        font-weight: 800;
-        font-size: 15px;
-        box-sizing: border-box;
-        border: none;
-        display: inline-block;
-        border-radius: 15px;
-        background-color: #aaaaaa66;
-        margin-bottom: 30px;
-    }
-
-    button:hover {
-        border: 1px inset;
-        background-color: #66666644;
-    }
-
-    #footer {
-        text-align: center;
-    }    
-    
-    #footer p {
-        font-family: 'Poppins';
-        font-size: 25px;
-        font-weight: 800;
-        color: #122b39;
-    }  
-}
-
-@media (min-width: 600px) {
-    body {
-        margin: 0;
-        display: grid;
-        grid-gap: 0;
-        background: url('fog.png');
-        background-size: cover;
-        
-    }
-    
-    #logo {
-        padding: 0;
-        margin: 10px;
-        max-height: 50px;
-        max-width: 50px;
-    }
-    
-    #slika:hover {
-        content: url("logohover.png");
-        height: 50px;
-        width: 50px;
-        margin: 10px;
-    }
-    
-    #header {
-        overflow: hidden;
-    }
-    
-    #header h1 {
-        float: right;
-        color: #122b39;
-        font-family: 'Poppins';
-        margin-right: 10px;
-    }
-    
-    #header ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    #header li {
-        box-sizing: border-box;
-        float: left;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding: 5px;
-        border-radius: 10px;
-    }
-
-    .ostali {
-        background-color: rgba(249, 249, 249, 0.329);
-    }
-
-    #trenutni {
-        background-color: #aaaaaa;
-    }
-    
-    .ostali:hover {
-        background-color: #aaaaaa;
-    }
-    
-    #header a {
-        color: #122b39b0;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none; 
-        font-weight: 800;
-        cursor: pointer;
-    }
-    
-    #glavniSadrzaj {
-        width: 85%;
-        border: 3px #122b3980 solid;
-        border-radius: 10px;
-        margin: auto;
-        background-color: #4fa3c12f
-    }
-
-    #dodavanje {
-        margin: 10px;
-        background-color: #122b3965;
-        border: 3px solid #122b3980;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    input[type="text"] {
-        width: 40%;
-        font-family: 'Poppins';
-        font-size: 20px;
-        box-sizing: border-box;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
-
-    label {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    #dodavanje p {
-        text-align: center;
-        font-size: 40px;
-        font-weight: 800;
-        font-family: 'Poppins';
-        color: #1a1a1a;
-    }
-
-    select {
-        margin-top: 10px;
-        width: 100px;
-        height: 40px;
-        font-family: 'Poppins';
-        font-weight: 800;
-        font-size: 15px;
-        box-sizing: border-box;
-        border: none;
-        display: inline-block;
-        border-radius: 15px;
-        background-color: #aaaaaa66;
-        margin-bottom: 30px;
-    }
-
-    button {
-        margin-top: 10px;
-        width: 130px;
-        height: 40px;
-        font-family: 'Poppins';
-        font-weight: 800;
-        font-size: 15px;
-        box-sizing: border-box;
-        border: none;
-        display: inline-block;
-        border-radius: 15px;
-        background-color: #aaaaaa66;
-        margin-bottom: 30px;
-    }
-
-    button:hover {
-        border: 1px inset;
-        background-color: #66666644;
-    }
-
-    #footer {
-        text-align: center;
-    }    
-    
-    #footer p {
-        font-family: 'Poppins';
-        font-size: 25px;
-        font-weight: 800;
-        color: #122b39;
-    }  
 }

@@ -1,490 +1,274 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-@media (min-width: 600px) {
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-columns: 25% 25% 50%;
-        grid-gap: 0;
-        background: url('fog.png');
-        background-size: cover;
-    }
-    
-    #logo {
-        padding: 0;
-        margin: 10px;
-        max-height: 50px;
-        max-width: 50px;
-    }
-    
-    #header {
-        grid-column: 1/4;
-        overflow: hidden;
-    }
-    
-    #header h1 {
-        float: right;
-        color: #122b39;
-        font-family: 'Poppins';
-        margin-right: 10px;
-    }
-    
-    #header ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    #header li {
-        box-sizing: border-box;
-        float: left;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding: 5px;
-        border-radius: 10px;
-    }
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-gap: 0;
+    background: url('fog.png');
+    background-size: cover;
+}
 
-    .ostali {
-        background-color: rgba(249, 249, 249, 0.329);
-    }
+#logo {
+    padding: 0;
+    margin: 10px;
+    max-height: 50px;
+    max-width: 50px;
+}
 
-    #trenutni {
-        background-color: #aaaaaa;
-    }
-    
-    .ostali:hover {
-        background-color: #aaaaaa;
-    }
-    
-    #header a {
-        color: #122b39b0;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none; 
-        font-weight: 800;
-        cursor: pointer;
-    }
-    
-    #godinaDiv {
-        border: 3px #122b3980 solid;
-        border-radius: 10px;
-        background-color: #4fa3c12f;
-    }
-    
-    .cetvrtina p {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 800;
-        font-family: 'Poppins';
-        color: #1a1a1a;
-    }
-    
-    #godinaDiv ul {
-        list-style-type: none;
-        height: 250px;
-        width: 60%;
-        border: 2px #666666;
-        border-top-style: inset;
-        border-left-style: inset;
-        border-bottom-style: outset;
-        border-right-style: outset;
-        outline: none;
-        overflow-y: scroll;
-        padding-left: 0;
-        margin: auto;
-        margin-bottom: 20px;
-        background-color: #122b3965;
-    }
-    
-    #godina li {
-        font-family: 'Poppins';
-        font-size: 20px;
-    }
-    
-    #godina li:hover {
-        background-color: #aaaaaa;
-        -webkit-text-stroke: 2px black;
-    }
-    
-    #student {
-        border: 3px #122b3980 solid;
-        border-radius: 10px;
-        background-color: #4fa3c12f;
-    }
-    
-    #student ul {
-        list-style-type: none;
-        height: 200px;
-        width: 80%;
-        border: 2px #666666;
-        border-top-style: inset;
-        border-left-style: inset;
-        border-bottom-style: outset;
-        border-right-style: outset;
-        outline: none;
-        overflow-y: scroll;
-        padding-left: 0;
-        margin: auto;
-        margin-top: 20px;
-        background-color: #122b3965;
-    }
-    
-    #student li {
-        font-family: 'Poppins';
-        font-size: 20px;
-    }
-    
-    #student li:hover {
-        background-color: #aaaaaa;
-        -webkit-text-stroke: 2px black;
-    }
-    
-    #student form{
-        text-align: center;
-    }
-    
-    #student input[type="text"] {
-        width: 60%;
-        font-family: 'Poppins';
-        font-size: 20px;
-        box-sizing: border-box;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-    }
-    
-    #submitButton {
-        margin-top: 10px;
-        width: 100px;
-        height: 30px;
-        font-family: 'Poppins';
-        font-weight: 800;
-        font-size: 15px;
-        box-sizing: border-box;
-        border: none;
-        display: inline-block;
-        border-radius: 15px;
-        background-color: #aaaaaaaa;
-    }
+#header {
+    grid-column: 1/4;
+    overflow: hidden;
+}
 
-    #submitButton:hover {
-        border: 1px inset;
-        background-color: #66666644;
-    }
-    
-    input::placeholder {
-        font-family: 'Poppins', sans-serif;
-    }
+#header h1 {
+    float: right;
+    color: #122b39;
+    font-family: 'Poppins';
+    margin-right: 10px;
+}
 
-    .polovina {
-        border: 3px #122b3980 solid;
-        border-left: 0;
-        border-radius: 10px;
-        background-color: #4fa3c12f;
-    }
-    
-    .polovina p {
-        margin-left: 4em;
-        font-size: 20px;
-        font-family: 'Poppins';
-        font-weight: 800;
-    }
-    
-    .item {
-        text-decoration: none;
-        font-family: 'Poppins';
-        -webkit-text-stroke: 1px black;
-        border: 3px outset #666666;
-        border-radius: 10px;
-        background-color: #aaaaaaaa;
-        height: 60px;
-        width: 120px;
-    }
-    
-    .item:hover {
-        background-color: #66666644;
-        border-style: inset;
-    }
-    
-    .polovina ul {
-        list-style-type: none;
-    }
-    
-    .polovina li {
-        margin: 20px;
-        float: left;
-    }
-    
-    
-    .folder {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        background-color: #122b3965;
-        border: 3px solid #122b3980;
-        border-radius: 10px;
-    }
-    
-    .folder p {
-        grid-column: 1/4;
-    }
-    
-    #footer {
-        grid-column: 1/4; 
-        text-align: center;
-    }    
-    
-    #footer p {
-        font-family: 'Poppins';
-        font-size: 25px;
-        font-weight: 800;
-        color: #122b39;
-    } 
+#header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#header li {
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ostali {
+    background-color: rgba(249, 249, 249, 0.329);
+}
+
+#trenutni {
+    background-color: #aaaaaa;
+}
+
+.ostali:hover {
+    background-color: #aaaaaa;
+}
+
+#header a {
+    color: #122b39b0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; 
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#godinaDiv {
+    border: 3px #122b3980 solid;
+    border-radius: 10px;
+    background-color: #4fa3c12f;
+}
+
+.cetvrtina p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    color: #1a1a1a;
+}
+
+#godinaDiv ul {
+    list-style-type: none;
+    height: 250px;
+    width: 60%;
+    border: 2px #666666;
+    border-top-style: inset;
+    border-left-style: inset;
+    border-bottom-style: outset;
+    border-right-style: outset;
+    outline: none;
+    overflow-y: scroll;
+    padding-left: 0;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #122b3965;
+}
+
+#godina li {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#godina li:hover {
+    background-color: #aaaaaa;
+    -webkit-text-stroke: 2px black;
+}
+
+#student {
+    border: 3px #122b3980 solid;
+    border-radius: 10px;
+    background-color: #4fa3c12f;
+}
+
+#student ul {
+    list-style-type: none;
+    height: 200px;
+    width: 80%;
+    border: 2px #666666;
+    border-top-style: inset;
+    border-left-style: inset;
+    border-bottom-style: outset;
+    border-right-style: outset;
+    outline: none;
+    overflow-y: scroll;
+    padding-left: 0;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #122b3965;
+}
+
+#student li {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#student li:hover {
+    background-color: #aaaaaa;
+    -webkit-text-stroke: 2px black;
+}
+
+#student form{
+    text-align: center;
+}
+
+#student input[type="text"] {
+    width: 60%;
+    font-family: 'Poppins';
+    font-size: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#submitButton {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: none;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #aaaaaaaa;
+}
+
+#submitButton:hover {
+    border: 1px inset;
+    background-color: #66666644;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.polovina {
+    border: 3px #122b3980 solid;
+    border-left: 0;
+    border-radius: 10px;
+    background-color: #4fa3c12f;
+}
+
+.polovina p {
+    margin-left: 4em;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+
+.item {
+    text-decoration: none;
+    font-family: 'Poppins';
+    -webkit-text-stroke: 1px black;
+    border: 3px outset #666666;
+    border-radius: 10px;
+    background-color: #aaaaaaaa;
+    height: 60px;
+    width: 120px;
+}
+
+.item:hover {
+    background-color: #66666644;
+    border-style: inset;
+}
+
+.polovina ul {
+    list-style-type: none;
+}
+
+.polovina li {
+    margin: 20px;
+    float: left;
+}
+
+
+.folder {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #122b3965;
+    border: 3px solid #122b3980;
+    border-radius: 10px;
+}
+
+.folder p {
+    grid-column: 1/4;
+}
+
+#footer {
+    grid-column: 1/4; 
+    text-align: center;
+}    
+
+#footer p {
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 800;
+    color: #122b39;
 }
 
 @media (max-width: 600px) {
     body {
         margin: 0;
         display: grid;
+        grid-template-columns: 100%;
         grid-gap: 0;
         background: url('fog.png');
-        background-size: cover;  
-    }
-    
-    #logo {
-        padding: 0;
-        margin: 10px;
-        max-height: 50px;
-        max-width: 50px;
-    }
-    
-    #slika:hover {
-        content: url("logohover.png");
-        height: 50px;
-        width: 50px;
-        margin: 10px;
+        background-size: cover;
     }
     
     #header {
         display: grid;
         grid-template-rows: auto auto auto;
-        overflow: hidden;
     }
-    
+
     #header h1 {
         grid-row: 3/4;
-        float: right;
-        color: #122b39;
-        font-family: 'Poppins';
-        margin-right: 10px;
-    }
-    
-    #header ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    #header li {
-        box-sizing: border-box;
-        float: left;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding: 5px;
-        border-radius: 10px;
     }
 
-    .ostali {
-        background-color: rgba(249, 249, 249, 0.329);
-    }
-
-    #trenutni {
-        background-color: #aaaaaa;
-    }
-    
-    .ostali:hover {
-        background-color: #aaaaaa;
-    }
-    
-    #header a {
-        color: #122b39b0;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none; 
-        font-weight: 800;
-        cursor: pointer;
-    }
-    
     #godinaDiv {
-        border: 3px #122b3980 solid;
-        border-radius: 10px;
-        background-color: #4fa3c12f;
-    }
-    
-    .cetvrtina p {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 800;
-        font-family: 'Poppins';
-        color: #1a1a1a;
-    }
-    
-    #godinaDiv ul {
-        list-style-type: none;
-        height: 250px;
-        width: 60%;
-        border: 2px #666666;
-        border-top-style: inset;
-        border-left-style: inset;
-        border-bottom-style: outset;
-        border-right-style: outset;
-        outline: none;
-        overflow-y: scroll;
-        padding-left: 0;
-        margin: auto;
-        margin-bottom: 20px;
-        background-color: #122b3965;
-    }
-    
-    #godina li {
-        font-family: 'Poppins';
-        font-size: 20px;
-    }
-    
-    #godina li:hover {
-        background-color: #aaaaaa;
-        -webkit-text-stroke: 2px black;
-    }
-    
-    #student {
-        border: 3px #122b3980 solid;
-        border-radius: 10px;
-        background-color: #4fa3c12f;
-    }
-    
-    #student ul {
-        list-style-type: none;
-        height: 200px;
-        width: 80%;
-        border: 2px #666666;
-        border-top-style: inset;
-        border-left-style: inset;
-        border-bottom-style: outset;
-        border-right-style: outset;
-        outline: none;
-        overflow-y: scroll;
-        padding-left: 0;
-        margin: auto;
-        margin-top: 20px;
-        background-color: #122b3965;
-    }
-    
-    #student li {
-        font-family: 'Poppins';
-        font-size: 20px;
-    }
-    
-    #student li:hover {
-        background-color: #aaaaaa;
-        -webkit-text-stroke: 2px black;
-    }
-    
-    #student form{
-        text-align: center;
-    }
-    
-    #student input[type="text"] {
-        width: 60%;
-        font-family: 'Poppins';
-        font-size: 20px;
-        box-sizing: border-box;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-    }
-    
-    #submitButton {
-        margin-top: 10px;
-        width: 100px;
-        height: 30px;
-        font-family: 'Poppins';
-        font-weight: 800;
-        font-size: 15px;
-        box-sizing: border-box;
-        border: none;
-        display: inline-block;
-        border-radius: 15px;
-        background-color: #aaaaaaaa;
+        grid-row: 2/3;
     }
 
-    #submitButton:hover {
-        border: 1px inset;
-        background-color: #66666644;
+    #student {
+        grid-row: 3/4;
     }
     
     .polovina {
-        border: 3px #122b3980 solid;
-        border-left: 0;
-        border-radius: 10px;
-        background-color: #4fa3c12f;
+        grid-row: 4/5;
     }
-    
-    .polovina p {
-        margin-left: 4em;
-        font-size: 20px;
-        font-family: 'Poppins';
-        font-weight: 800;
-    }
-    
-    .item {
-        text-decoration: none;
-        font-family: 'Poppins';
-        -webkit-text-stroke: 1px black;
-        border: 3px outset #666666;
-        border-radius: 10px;
-        background-color: #aaaaaaaa;
-        height: 60px;
-        width: 120px;
-    }
-    
-    .item:hover {
-        background-color: #66666644;
-        border-style: inset;
-    }
-    
-    .polovina ul {
-        list-style-type: none;
-    }
-    
-    .polovina li {
-        margin: 20px;
-        float: left;
-    }
-    
-    
-    .folder {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        background-color: #122b3965;
-        border: 3px solid #122b3980;
-        border-radius: 10px;
-    }
-    
-    .folder p {
-        grid-column: 1/4;
-    }
-    
-    #footer {
-        text-align: center;
-    }    
-    
-    #footer p {
-        font-family: 'Poppins';
-        font-size: 25px;
-        font-weight: 800;
-        color: #122b39;
-    }  
 }
